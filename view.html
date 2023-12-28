@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>VIEW</title>
+    <link rel="stylesheet" href="../static/view.css">
+</head>
+<body background="../static/img4.jpg">
+    <div class="'option">        
+        <a href="view"><button>ALL</button></a>
+        <a href="viewtodo"><button>TO DO</button></a> 
+        <a href="viewinprogress"><button>IN PROGRESS</button></a> 
+        <a href="viewcompleted"><button>COMPLETED</button></a> 
+         
+    </div>
+    
+    <h1>TASK LIST</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>TASK ID</th>
+                <th>TASK NAME</th>
+                <th>TASK DESCRIPTION</th>
+                <th>TASK DUEDATE</th>
+                <th>TASK STATUS</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in sqldata %}
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td>
+                
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <a href="back"><button>BACK</button></a>
+    
+</body>
+</html>

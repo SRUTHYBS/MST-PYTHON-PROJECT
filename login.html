@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+<body background="../static/img1.jpg">
+    <h1>WELCOME TO TASK MANAGER</h1>
+    <h2>Enter Your Login Details</h2>
+
+    <form action="/home" method="post">
+
+        <label>Username:</label>
+
+        <input type="text" name="username">
+
+        <br>
+
+        <br>
+
+        <label>Password:</label>
+
+        <input type="password" name="password">
+
+        <br>
+
+        <br>
+
+        <input type="submit" value="Login">
+        <br>
+
+        {{msg}}
+        
+
+    </form>
+    <br>
+    
+    <a href="backtomain"><button>Back</button></a>
+</body>
+</html>

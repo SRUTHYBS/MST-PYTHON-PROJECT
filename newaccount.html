@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>NEW ACCOUNT</title>
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+<body background="../static/img1.jpg">
+    <h1>CREATE YOUR ACCOUNT</h1>
+    <form action="/new_user" method="post">
+
+        <label>Username:</label>
+
+        <input type="text" name="username">
+
+        <br>
+
+        <br>
+
+        <label>Password:</label>
+
+        <input type="password" name="password">
+
+        <br>
+
+        <br>
+
+        <input type="submit" value="Create">
+        <br>
+
+        {{msg}}
+        <br>
+        
+        <a href="backtomain"><button>Back</button></a>
+</body>
+</html>
