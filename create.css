@@ -1,0 +1,44 @@
+body{margin: 5px;;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+background-size: 100%;}
+form {
+  
+    margin-top: 20px;
+  
+  }
+  label {
+  
+    
+  
+    width: 80px;
+  
+    margin-bottom: 10px;
+  
+    font-weight: bold;
+  
+  }
+  input {
+  
+    width: 200px;
+  
+    padding: 5px;
+  
+    border: 1px solid #ccc;
+  
+    border-radius: 4px;
+  
+  }
+  
+  
+  input[type="number"] {
+  
+    width: 100px;
+  
+  }
+
+  
+  
+  
